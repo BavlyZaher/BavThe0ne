@@ -1,0 +1,23 @@
+:root {
+  --md-code-font: "JetBrains Mono", "Fira Code", monospace;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* كروت بسيطة لصفحة المقالات */
+.md-typeset .article-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset .article-card p {
+  margin: 0.2rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+}
