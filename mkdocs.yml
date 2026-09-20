@@ -1,0 +1,91 @@
+site_name: Sec-Notes
+site_description: Personal notes and write-ups on security research
+site_author: Your Name
+# لو الريبو اسمه مثلا sec-notes والمستخدم username:
+# site_url: https://username.github.io/sec-notes/
+repo_url: https://github.com/username/sec-notes
+repo_name: username/sec-notes
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+nav:
+  - Whoami: index.md
+  - Articles:
+      - Overview: articles/index.md
+      - XSS Notes: articles/xss-notes.md
+      - Recon Workflow: articles/recon-workflow.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - tags
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/username
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/username
+
+copyright: Copyright &copy; 2026 Your Name
